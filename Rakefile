@@ -4,3 +4,15 @@
 require_relative 'config/application'
 
 Rails.application.load_tasks
+
+task default: 'bundler:audit'
+
+namespace :foreman do
+  task :prod do
+    sh "bundle exec foreman start -f Procfile"
+  end
+
+  task :dev do
+    sh "bundle exec foreman start -f Procfile.dev"
+  end
+end

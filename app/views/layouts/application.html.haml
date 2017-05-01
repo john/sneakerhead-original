@@ -1,7 +1,8 @@
 !!!
 %html
   %head
-    %title APP_NAME
+    %title
+      Sneakerhead
     %meta{charset: "utf-8"}/
     %meta{content: "width=device-width, initial-scale=1, shrink-to-fit=no", name: "viewport"}
     %meta{content: "ie=edge", "http-equiv": "x-ua-compatible"}
@@ -30,7 +31,7 @@
       %button.navbar-toggler.navbar-toggler-right{type: "button", "data-toggle": "collapse", "data-target": "#navbarSupportedContent",  "aria-controls": "navbarSupportedContent", "aria-expanded": "false", "aria-label": "Toggle navigation"}
         %span.navbar-toggler-icon
       %a.navbar-brand{href: "/"}
-        🚀 APP_NAME
+        🚀 Sneakerhead
 
       .collapse.navbar-collapse#navbarSupportedContent
         %ul.navbar-nav.mr-auto
@@ -53,3 +54,5 @@
       = raw escaped_humane_flash_messages
 
       = yield
+
+      -# = javascript_pack_tag 'hello_react'
